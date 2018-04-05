@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class SolrConnector extends React.Component {
+class SolrConnector extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -91,7 +91,7 @@ class SolrConnector extends React.Component {
 }
 
 SolrConnector.propTypes = {
-  searchParams: React.PropTypes.object
+  searchParams: PropTypes.object
 };
 
 export default SolrConnector;
